@@ -15,7 +15,6 @@ ReactDOM.render(
   const response = await fetch(url);
   if (response.ok) {
     const pet = await response.json();
-    console.log(pet);
     ReactDOM.render(
       <React.StrictMode>
         <App pet={pet} />
