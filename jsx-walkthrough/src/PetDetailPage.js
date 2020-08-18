@@ -1,7 +1,13 @@
 import React from 'react';
 
-const PetDetailPage = () =>
-  <div>PetDetailPage component</div>
+import Navigation from './Navigation';
+import PetDetails from './PetDetails';
+
+const PetDetailPage = props =>
+  <>
+    <Navigation />
+    <PetDetails pet={props.pet} />
+  </>
 ;
 
 export default PetDetailPage;
